@@ -7,6 +7,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ConnectWalletComponent } from './core/connect-wallet/connect-wallet.component';
 import { HeroComponent } from './features/home/hero/hero.component';
 import { EarnPassiveIncomeComponent } from './features/home/earn-passive-income/earn-passive-income.component';
+import { WinMillionsComponent } from './features/home/win-millions/win-millions.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EarnPassiveIncomeComponent } from './features/home/earn-passive-income/
     FooterComponent,
     ConnectWalletComponent,
     HeroComponent,
-    EarnPassiveIncomeComponent
+    EarnPassiveIncomeComponent,
+    WinMillionsComponent
   ],
   imports: [
     BrowserModule
