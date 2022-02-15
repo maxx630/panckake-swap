@@ -9,6 +9,10 @@ import { HeroComponent } from './features/home/hero/hero.component';
 import { EarnPassiveIncomeComponent } from './features/home/earn-passive-income/earn-passive-income.component';
 import { WinMillionsComponent } from './features/home/win-millions/win-millions.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './features/home/home/home.component';
+import { TradeComponent } from './features/trade/trade/trade.component';
+import { ExchangeComponent } from './features/trade/exchange/exchange.component';
+import { LiquidityComponent } from './features/trade/liquidity/liquidity.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { AppRoutingModule } from './app-routing.module';
     ConnectWalletComponent,
     HeroComponent,
     EarnPassiveIncomeComponent,
-    WinMillionsComponent
+    WinMillionsComponent,
+    HomeComponent,
+    TradeComponent,
+    ExchangeComponent,
+    LiquidityComponent
   ],
   imports: [
     BrowserModule,
