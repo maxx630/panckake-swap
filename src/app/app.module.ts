@@ -8,6 +8,7 @@ import { ConnectWalletComponent } from './core/connect-wallet/connect-wallet.com
 import { HeroComponent } from './features/home/hero/hero.component';
 import { EarnPassiveIncomeComponent } from './features/home/earn-passive-income/earn-passive-income.component';
 import { WinMillionsComponent } from './features/home/win-millions/win-millions.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WinMillionsComponent } from './features/home/win-millions/win-millions.
     WinMillionsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
