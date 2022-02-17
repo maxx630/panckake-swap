@@ -13,6 +13,7 @@ import { HomeComponent } from './features/home/home/home.component';
 import { TradeComponent } from './features/trade/trade/trade.component';
 import { ExchangeComponent } from './features/trade/exchange/exchange.component';
 import { LiquidityComponent } from './features/trade/liquidity/liquidity.component';
+import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LiquidityComponent } from './features/trade/liquidity/liquidity.compone
     HomeComponent,
     TradeComponent,
     ExchangeComponent,
-    LiquidityComponent
+    LiquidityComponent,
+    AddSectionComponent
   ],
   imports: [
     BrowserModule,
