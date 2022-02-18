@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 /* Loghi e icone Ayoub */
 @import 'assets/mediaQueries/media-queries.css';
+@import 'app/core/navbar/navbar.component.css';
+@import 'app/features/home/hero/hero.component.css';
+@import 'app/features/home/trade-anything/trade-anything.component.css';
+
 
 .logo2 {
   border: 1px solid transparent;
@@ -68,6 +72,10 @@ background-color: #fff;
 border: none;
 outline: 0;
 box-shadow: none;
+}
+
+.btn{
+  margin-right:5px;
 }
 
 .btn:focus,
