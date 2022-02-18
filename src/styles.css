@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 /* Loghi e icone Ayoub */
 @import 'assets/mediaQueries/media-queries.css';
 @import 'app/core/navbar/navbar.component.css';
@@ -211,4 +211,26 @@ font-weight: 600;
 justify-content: center;
 letter-spacing: 0.03em;
 line-height: 1;
+}
+
+/* SCROLLBAR  */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7A6EAA; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7A6EAA; 
 }
