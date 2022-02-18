@@ -58,15 +58,18 @@
 .col3 {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .col3 button {
+    height: 48px;
     width: 95%;
     color: white;
     background-color: #21C7D4;
     border: none;
-    margin-bottom: 25px;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .col3 button:hover {
     background-color: #6EDBE3;
@@ -206,6 +209,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bnbCol img {
+    width: 34px;
+}
+.busdCol img,
+.cakeCol img,
+.btcbCol img {
+    width: 20px;
 }
 .commonCurrency {
     width: 100%;
