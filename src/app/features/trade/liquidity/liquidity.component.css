@@ -36,14 +36,15 @@
     align-items: center;
 }
 .col3 button {
+    height: 48px;
     width: 95%;
     color: white;
     background-color: #21C7D4;
     border: none;
     transition: 0.5s;
-}
-.col3 button:hover {
-    background-color: #6EDBE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .col1 {
     display: flex;

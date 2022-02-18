@@ -25,7 +25,7 @@ import { AddSectionComponent } from './features/trade/liquidity/add-section/add-
     ConnectWalletComponent,
     HeroComponent,
     EarnPassiveIncomeComponent,
-    TradeAnythingComponent
+    TradeAnythingComponent,
     WinMillionsComponent,
     HomeComponent,
     TradeComponent,
