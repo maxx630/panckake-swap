@@ -15,6 +15,7 @@ import { TradeComponent } from './features/trade/trade/trade.component';
 import { ExchangeComponent } from './features/trade/exchange/exchange.component';
 import { LiquidityComponent } from './features/trade/liquidity/liquidity.component';
 import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
+import { CakeComponent } from './core/cake/cake.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AddSectionComponent } from './features/trade/liquidity/add-section/add-
     TradeComponent,
     ExchangeComponent,
     LiquidityComponent,
-    AddSectionComponent
+    AddSectionComponent,
+    CakeComponent
   ],
   imports: [
     BrowserModule,
