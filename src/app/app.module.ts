@@ -17,6 +17,7 @@ import { LiquidityComponent } from './features/trade/liquidity/liquidity.compone
 import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
 import { CakeComponent } from './core/cake/cake.component';
 import { StartInSecondsComponent } from './core/start-in-seconds/start-in-seconds.component';
+import { EranComponent } from './eran/eran.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { StartInSecondsComponent } from './core/start-in-seconds/start-in-second
     LiquidityComponent,
     AddSectionComponent,
     CakeComponent,
-    StartInSecondsComponent
+    StartInSecondsComponent,
+    EranComponent
   ],
   imports: [
     BrowserModule,
