@@ -15,9 +15,8 @@ import { TradeComponent } from './features/trade/trade/trade.component';
 import { ExchangeComponent } from './features/trade/exchange/exchange.component';
 import { LiquidityComponent } from './features/trade/liquidity/liquidity.component';
 import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
-import { CakeComponent } from './core/cake/cake.component';
-import { StartInSecondsComponent } from './core/start-in-seconds/start-in-seconds.component';
-import { EranComponent } from './eran/eran.component';
+import { CakeComponent } from './features/home/cake/cake.component';
+import { StartInSecondsComponent } from './features/home/start-in-seconds/start-in-seconds.component';
 
 
 @NgModule({
@@ -36,8 +35,7 @@ import { EranComponent } from './eran/eran.component';
     LiquidityComponent,
     AddSectionComponent,
     CakeComponent,
-    StartInSecondsComponent,
-    EranComponent
+    StartInSecondsComponent
   ],
   imports: [
     BrowserModule,
