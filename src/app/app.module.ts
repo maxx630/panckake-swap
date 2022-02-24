@@ -17,6 +17,14 @@ import { LiquidityComponent } from './features/trade/liquidity/liquidity.compone
 import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
 import { CakeComponent } from './features/home/cake/cake.component';
 import { StartInSecondsComponent } from './features/home/start-in-seconds/start-in-seconds.component';
+import { NftsComponent } from './features/nfts/nfts.component';
+import { CollectionsComponent } from './features/nfts/collections/collections.component';
+import { ActivityComponent } from './features/nfts/activity/activity.component';
+import { OverviewComponent } from './features/nfts/overview/overview.component';
+import { NewestCollectionsComponent } from './features/nfts/overview/newest-collections/newest-collections.component';
+import { HotCollectionsComponent } from './features/nfts/overview/hot-collections/hot-collections.component';
+import { NewestArrivalsComponent } from './features/nfts/overview/newest-arrivals/newest-arrivals.component';
+import { FaqsComponent } from './features/nfts/overview/faqs/faqs.component';
 
 
 @NgModule({
@@ -35,7 +43,15 @@ import { StartInSecondsComponent } from './features/home/start-in-seconds/start-
     LiquidityComponent,
     AddSectionComponent,
     CakeComponent,
-    StartInSecondsComponent
+    StartInSecondsComponent,
+    NftsComponent,
+    CollectionsComponent,
+    ActivityComponent,
+    OverviewComponent,
+    NewestCollectionsComponent,
+    HotCollectionsComponent,
+    NewestArrivalsComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
