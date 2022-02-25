@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
-/* Loghi e icone Ayoub */
 @import 'assets/mediaQueries/media-queries.css';
 @import 'app/core/navbar/navbar.component.css';
 @import 'app/features/home/hero/hero.component.css';
@@ -223,14 +222,14 @@ line-height: 1;
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7A6EAA; 
+  background: #7A6EAA;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #7A6EAA; 
+  background: #7A6EAA;
 }

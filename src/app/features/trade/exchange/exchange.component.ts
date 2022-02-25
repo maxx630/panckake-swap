@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exchange.component.css']
 })
 export class ExchangeComponent implements OnInit {
+  active = 1;
 
   constructor() { }
 
