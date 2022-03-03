@@ -29,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LineChartComponent } from './shared/chart/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { SwapComponent } from './shared/swap/swap.component';
+import { EarnComponent } from './features/earn/earn.component';
+import { FarmsComponent } from './features/earn/farms/farms.component';
 
 
 
@@ -61,6 +63,8 @@ import { SwapComponent } from './shared/swap/swap.component';
     FaqsComponent,
     LineChartComponent,
     SwapComponent,
+    EarnComponent,
+    FarmsComponent,
   ],
   imports: [
     BrowserModule,

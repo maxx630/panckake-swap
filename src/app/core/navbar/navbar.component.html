@@ -9,21 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle bg-hover" href="pages/trade/exchange.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle bg-hover" [routerLink]="['/swap']" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Trade
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/swap']">Exchange</a></li>
-                <li><a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/liquidity']">Liquidity</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/swap']">Exchange</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/liquidity']">Liquidity</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle bg-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle bg-hover" [routerLink]="['/farms']" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Earn
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Farms</a></li>
-                <li><a class="dropdown-item" href="#">Pools</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/farms']">Farms</a></li>
+                <li><a class="dropdown-item" [routerLink]="['/pools']">Pools</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
