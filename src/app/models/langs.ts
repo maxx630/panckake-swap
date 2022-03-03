@@ -1,4 +1,4 @@
-export interface Data {
+export interface ILanguages {
   code: string;
   name: string;
   nativeName: string;
