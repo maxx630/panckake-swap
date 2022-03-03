@@ -25,10 +25,11 @@ import { NewestCollectionsComponent } from './features/nfts/overview/newest-coll
 import { HotCollectionsComponent } from './features/nfts/overview/hot-collections/hot-collections.component';
 import { NewestArrivalsComponent } from './features/nfts/overview/newest-arrivals/newest-arrivals.component';
 import { FaqsComponent } from './features/nfts/overview/faqs/faqs.component';
-import { TabsComponent } from './shared/tabs/tabs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LineChartComponent } from './shared/chart/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
+import { SwapComponent } from './shared/swap/swap.component';
+
 
 
 
@@ -58,8 +59,8 @@ import { ChartsModule } from 'ng2-charts';
     HotCollectionsComponent,
     NewestArrivalsComponent,
     FaqsComponent,
-    TabsComponent,
     LineChartComponent,
+    SwapComponent,
   ],
   imports: [
     BrowserModule,
