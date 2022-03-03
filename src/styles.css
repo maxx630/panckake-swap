@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 @import 'assets/mediaQueries/media-queries.css';
 @import 'app/core/navbar/navbar.component.css';
-@import 'app/features/home/hero/hero.component.css';
-@import 'app/features/home/trade-anything/trade-anything.component.css';
+@import 'app/pages/home/hero/hero.component.css';
+@import 'app/pages/home/trade-anything/trade-anything.component.css';
 
 
 .logo2 {

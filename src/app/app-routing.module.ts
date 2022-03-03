@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FarmsComponent } from './features/earn/farms/farms.component';
-import { HomeComponent } from './features/home/home/home.component';
-import { OverviewComponent } from './features/nfts/overview/overview.component';
-import { ExchangeComponent } from './features/trade/exchange/exchange.component';
-import { AddSectionComponent } from './features/trade/liquidity/add-section/add-section.component';
-import { LiquidityComponent } from './features/trade/liquidity/liquidity.component';
+import { FarmsComponent } from './pages/earn/farms/farms.component';
+import { HomeComponent } from './pages/home/home/home.component';
+import { CollectionsComponent } from './pages/nfts/collections/collections.component';
+import { OverviewComponent } from './pages/nfts/overview/overview.component';
+import { ExchangeComponent } from './pages/trade/exchange/exchange.component';
+import { AddSectionComponent } from './pages/trade/liquidity/add-section/add-section.component';
+import { LiquidityComponent } from './pages/trade/liquidity/liquidity.component';
 import { SwapComponent } from './shared/swap/swap.component';
 
 const routes: Routes = [
@@ -37,6 +38,10 @@ const routes: Routes = [
     path: 'pools',
     component: FarmsComponent
   },
+  {
+    path: 'nfts/collections',
+    component: CollectionsComponent
+  }
 ];
 
 @NgModule({
