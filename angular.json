@@ -34,9 +34,7 @@
               "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/js/script-valentina.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
