@@ -1,13 +1,13 @@
 <div class="box-chart">
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs mb-3 d-flex flex-row justify-content-center scroll">
     <li [ngbNavItem]="1">
-      <a ngbNavLink class="small_text green-b color">Exchange</a>
+      <a ngbNavLink class="small_text green-b color" id="pills-exc-tab">Exchange</a>
       <ng-template ngbNavContent>
         <psclone-exchange></psclone-exchange>
       </ng-template>
     </li>
     <li [ngbNavItem]="2">
-      <a ngbNavLink class="small_text color">Liquidity</a>
+      <a ngbNavLink class="small_text color" id="pills-liq-tab">Liquidity</a>
       <ng-template ngbNavContent>
         <psclone-liquidity></psclone-liquidity>
       </ng-template>
