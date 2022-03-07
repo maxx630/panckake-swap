@@ -4,6 +4,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    
 }
 
 .row {
@@ -11,8 +12,8 @@
     grid-template-columns: auto auto auto auto;
     margin: auto;
     padding: auto;
-    width: 85%;
-
+    width: 83%;
+    margin-top: 30px;
 }
 
 .row a {
@@ -158,6 +159,7 @@ hr {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.2;
 }
 
 .sc-bdvvt {
