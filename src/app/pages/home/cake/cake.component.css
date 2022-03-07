@@ -1,7 +1,8 @@
 .box2{
     float: right;
-    margin-right:30%;
-    margin-top: 15%;
+    margin-right:27%;
+    margin-top: 17%;
+   
  
 }
 .box2 img{
@@ -11,6 +12,7 @@
     animation-name:foto;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    
 
 }
 .box1{
@@ -23,7 +25,7 @@
     text-decoration: justify;
 }
 .btn{
-    background-color: aqua;
+    background-color: #1fc6d3;
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 13px;
@@ -35,12 +37,12 @@
 
 }
 .btn:hover{
-   background-color:aqua;
+   background-color:#1fc6d3;
    opacity: 0.6;
   
 }
 .link{
-color: aqua;
+color: #1fc6d3;
 margin-left: 10px;
 text-decoration: none;
 font-size: 16px;
@@ -48,7 +50,7 @@ font-size: 16px;
     line-height: 1.5;
 }
 .link:hover{
-    border-bottom:2px solid aqua;
+    border-bottom:2px solid #1fc6d3;
 }
 .container{
 display: flex;
