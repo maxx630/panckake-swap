@@ -33,6 +33,7 @@ import { EarnComponent } from './pages/earn/earn.component';
 import { FarmsComponent } from './pages/earn/farms/farms.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
+import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
 
 
 
@@ -65,6 +66,7 @@ import {NgxPaginationModule} from 'ngx-pagination';
     SwapComponent,
     EarnComponent,
     FarmsComponent,
+    UsedByMillionsComponent,
   ],
   imports: [
     BrowserModule,
