@@ -1,1 +1,104 @@
-<p>activity works!</p>
+<div class="container-fluid activityCont">
+    <div class="container activitySubCont">
+        <div class="col colLeft">
+            <div class="col">
+                <h1 class="h1">
+                    <strong>
+                        Activity
+                    </strong>
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <div class="container tabCont">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <h6 class="h6 small">ITEM</h6>
+                    </th>
+                    <th scope="col">
+                        <h6 class="h6 small">EVENT</h6>
+                    </th>
+                    <th scope="col">
+                        <h6 class="h6 small">PRICE</h6>
+                    </th>
+                    <th scope="col">
+                        <h6 class="h6 small">FROM</h6>
+                    </th>
+                    <th scope="col">
+                        <h6 class="h6 small text-center">TO</h6>
+                    </th>
+                    <th scope="col">
+                        <h6 class="h6 small text-center">DATE</h6>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="myRow" *ngFor="let i of tab | 
+                paginate: { 
+                    itemsPerPage: 8,
+                    currentPage: page, 
+                    totalItems: totalLength
+                }">
+                    <td class="firstCol">
+                        <div class="col imgCont" style="background: url({{i.img}}) center; background-size: contain;">
+
+                        </div>
+                        <div class="col descriptionCol mx-2">
+                            <div class="col">
+                                <h6 class="h6 small">
+                                    {{i.description}}
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="h6 diffCol">
+                                    {{i.title}}
+                                </h6>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <h6 class="h6">
+                            {{i.event}}
+                        </h6>
+                    </td>
+                    <td>
+                        <div class="col descriptionCol mx-2">
+                            <div class="col">
+                                <h6 class="h6 diffCol">
+                                    {{i.cryptoPrice}}
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="h6 small">
+                                    ${{i.dollarPrice}}
+                                </h6>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <h6 class="h6 diffCol">
+                            {{i.user}}
+                        </h6>
+                    </td>
+                    <td class="text-center">
+                        <h6 class="h6 diffCol">
+                            -
+                        </h6>
+                    </td>
+                    <td class="text-center">
+                        <h6 class="h6 diffCol">
+                            {{i.date | date: 'dd/MM/yyyy'}}
+                        </h6>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container pagCont text-center">
+            <pagination-controls (pageChange)="page = $event"></pagination-controls>
+        </div>
+    </div>
+</div>

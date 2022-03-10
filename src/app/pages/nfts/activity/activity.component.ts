@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivityService } from 'src/app/core/service/activity.service';
+import { IActivityTab } from 'src/app/models/activityTab';
 
 @Component({
   selector: 'psclone-activity',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityComponent implements OnInit {
 
-  constructor() { }
+  totalLength: any;
+  page: number = 1;
+
+  tab: IActivityTab[] = [];
+
+  constructor(private tabService: ActivityService) { }
 
   ngOnInit(): void {
+    this.tab = this.tabService.getAll();
   }
 
 }
