@@ -1,5 +1,5 @@
 .container2{
-   height: 50vh;
+   height: 60vh;
     width: 100%;  
      display: inline-block;
      position: relative;
@@ -33,53 +33,10 @@
 .foto-sinistra img{
     margin: -600px;
     width: auto;
-    animation-name:foto;
-    animation-duration: 23s;
-    animation-iteration-count: infinite;
     float: right;
     margin-right: 100px;
     margin-top: -19%;
    
     overflow: hidden;
 }
-@keyframes foto{
-    0%{
-        transform: rotateZ(50deg);   
-    }
-    50%{
-     
-        transform: rotateZ(450deg); 
-      }
-    100%{
-  
-        transform: rotateZ(950deg);
-      }
-}
-.btn{
-    background-color: #1fc6d3;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 13px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: azure;
 
-}
-.btn:hover{
-   background-color:#1fc6d3;
-   opacity: 0.6;
-  
-}
-.link{
-color: #1fc6d3;
-margin-left: 10px;
-text-decoration: none;
-font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-}
-.link:hover{
-    border-bottom:2px solid#1fc6d3;
-}
