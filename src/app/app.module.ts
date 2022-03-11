@@ -35,6 +35,8 @@ import { FarmsComponent } from './pages/earn/farms/farms.component';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
 import { FarmsCollapseComponent } from './pages/earn/farms/farms-collapse/farms-collapse.component';
+import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
+import { PoolsComponent } from './pages/earn/pools/pools.component';
 
 
 
@@ -69,6 +71,8 @@ import { FarmsCollapseComponent } from './pages/earn/farms/farms-collapse/farms-
     FarmsComponent,
     UsedByMillionsComponent,
     FarmsCollapseComponent,
+    EarnTabComponent,
+    PoolsComponent,
   ],
   imports: [
     BrowserModule,

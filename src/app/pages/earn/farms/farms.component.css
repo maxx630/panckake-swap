@@ -17,6 +17,7 @@
 
 .jumbo-c{
   background: var(--bg-gradient-primary) !important;
+  margin-top:-3rem;
 }
 
 .jumbo button:hover{
