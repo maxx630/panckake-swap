@@ -1,0 +1,53 @@
+.activityCont {
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(0.25turn, #E6FDFF, #F1F0FF);
+}
+.activitySubCont {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.colLeft .col .h1 {
+    font-size: 64px;
+    color: #7645D9;
+}
+.tabCont {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 20px;
+}
+thead {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.firstCol {
+    display: flex;
+    align-items: center;
+}
+.imgCont {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 10px;
+}
+.descriptionCol {
+    display: flex;
+    flex-direction: column;
+}
+.myRow {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.h6 {
+    color: var(--pancake-main-light);
+}
+.diffCol {
+    color: var(--pancake-main-dark);
+}
+td {
+    margin: 15px;
+}
+.pagCont {
+    color: var(--pancake-main-dark);
+}
