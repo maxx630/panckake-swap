@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'psclone-swap',
@@ -10,10 +11,11 @@ export class SwapComponent implements OnInit {
   element1!: string;
   element2!: string;
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
     this.alternateBorder();
+    this.changeVisual();
   }
 
   alternateBorder() {
@@ -30,4 +32,17 @@ export class SwapComponent implements OnInit {
       element2!.classList.remove("green-b", 'secondary-v');
     })
   }
+
+  changeVisual() {
+    const element1 = document.getElementById("pills-exc-tab");
+    const element2 = document.getElementById("pills-liq-tab");
+
+    if (this.router.url.indexOf('/liquidity') > -1) {
+      this.active = 2;
+
+      element2!.classList.add('green-b');
+      element1!.classList.remove('green-b');
+    }
+  }
+
 }
