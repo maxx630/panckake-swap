@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'psclone-swap',
-  templateUrl: './swap.component.html',
-  styleUrls: ['./swap.component.css']
+  selector: 'psclone-earn-tab',
+  templateUrl: './earn-tab.component.html',
+  styleUrls: ['./earn-tab.component.css']
 })
-export class SwapComponent implements OnInit {
+export class EarnTabComponent implements OnInit {
+
   active = 1;
   element1!: string;
   element2!: string;
@@ -37,12 +38,11 @@ export class SwapComponent implements OnInit {
     const element1 = document.getElementById("pills-exc-tab");
     const element2 = document.getElementById("pills-liq-tab");
 
-    if (this.router.url.indexOf('/liquidity') > -1) {
+    if (this.router.url.indexOf('/pools') > -1) {
       this.active = 2;
 
       element2!.classList.add('green-b');
       element1!.classList.remove('green-b');
     }
   }
-
 }

@@ -1,0 +1,39 @@
+.coins{
+  width:24px;
+}
+
+.coins p{
+  font-size: 12px;
+  color: var(--pancake-main-light);
+  text-align: left;
+}
+
+.coins h6{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width:20rem;
+    color: var(--pancake-main-dark)
+}
+
+.coin-fav{
+  margin-top: -30px;
+}
+
+.coins svg{
+  margin-left:10px;
+  fill: var(--pancake-main-light);
+}
+
+.coin-small{
+  width:20px;
+}
+
+.accordion-button::after{
+  display:none;
+}
+
+#space-box{
+  margin-right:5rem;
+}
+
