@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ActivityService } from 'src/app/core/service/activity.service';
 import { IActivityTab } from 'src/app/models/activityTab';
 
@@ -9,15 +10,17 @@ import { IActivityTab } from 'src/app/models/activityTab';
 })
 export class ActivityComponent implements OnInit {
 
+  activityNfts: any;
+
   totalLength: any;
   page: number = 1;
 
-  tab: IActivityTab[] = [];
-
-  constructor(private tabService: ActivityService) { }
+  constructor(private activityService: ActivityService) { }
 
   ngOnInit(): void {
-    this.tab = this.tabService.getAll();
+    this.activityService.getAll()
+      .subscribe(res => {
+        this.activityNfts = res;
+      })
   }
-
 }

@@ -1,17 +1,23 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { mocks } from 'src/app/mocks/mocks';
-import { IActivityTab } from 'src/app/models/activityTab';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ActivityService {
 
-  tabs: IActivityTab[] = mocks;
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
-
-  getAll(): IActivityTab[] {
-    return this.tabs;
+  getAll() {
+    return this.http.get<any>('http://localhost:3000/nfts')
+    .pipe(map((res: any)=> {
+      return res;
+    }))
   }
+
+  // getAll(): Observable<IActivityTab[]> {
+  //   return this.httpClient.get<IActivityTab[]>('http://localhost:3000/projects').pipe(
+  //     tap((data) => data))
+  // }
 }
