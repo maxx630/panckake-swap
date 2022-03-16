@@ -17,14 +17,6 @@ import { LiquidityComponent } from './pages/trade/liquidity/liquidity.component'
 import { AddSectionComponent } from './pages/trade/liquidity/add-section/add-section.component';
 import { CakeComponent } from './pages/home/cake/cake.component';
 import { StartInSecondsComponent } from './pages/home/start-in-seconds/start-in-seconds.component';
-import { NftsComponent } from './pages/nfts/nfts.component';
-import { CollectionsComponent } from './pages/nfts/collections/collections.component';
-import { ActivityComponent } from './pages/nfts/activity/activity.component';
-import { OverviewComponent } from './pages/nfts/overview/overview.component';
-import { NewestCollectionsComponent } from './pages/nfts/overview/newest-collections/newest-collections.component';
-import { HotCollectionsComponent } from './pages/nfts/overview/hot-collections/hot-collections.component';
-import { NewestArrivalsComponent } from './pages/nfts/overview/newest-arrivals/newest-arrivals.component';
-import { FaqsComponent } from './pages/nfts/overview/faqs/faqs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LineChartComponent } from './shared/chart/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
@@ -37,6 +29,8 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
 import { FarmsCollapseComponent } from './pages/earn/farms/farms-collapse/farms-collapse.component';
 import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
 import { PoolsComponent } from './pages/earn/pools/pools.component';
+import { NftsComponent } from './pages/nfts/nfts.component';
+import { NftsModule } from './pages/nfts/nfts.module';
 
 
 
@@ -57,14 +51,6 @@ import { PoolsComponent } from './pages/earn/pools/pools.component';
     AddSectionComponent,
     CakeComponent,
     StartInSecondsComponent,
-    NftsComponent,
-    CollectionsComponent,
-    ActivityComponent,
-    OverviewComponent,
-    NewestCollectionsComponent,
-    HotCollectionsComponent,
-    NewestArrivalsComponent,
-    FaqsComponent,
     LineChartComponent,
     SwapComponent,
     EarnComponent,
@@ -72,7 +58,7 @@ import { PoolsComponent } from './pages/earn/pools/pools.component';
     UsedByMillionsComponent,
     FarmsCollapseComponent,
     EarnTabComponent,
-    PoolsComponent,
+    PoolsComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +66,8 @@ import { PoolsComponent } from './pages/earn/pools/pools.component';
     NgbModule,
     HttpClientModule,
     ChartsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NftsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

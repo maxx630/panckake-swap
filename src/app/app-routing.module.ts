@@ -26,7 +26,7 @@ const routes: Routes = [
   },
   {
     path: 'nfts',
-    component: OverviewComponent
+    loadChildren: () => import('../app/pages/nfts/nfts.module').then(m => m.NftsModule)
   },
   {
     path: 'swap',
@@ -40,14 +40,14 @@ const routes: Routes = [
     path: 'pools',
     component: EarnTabComponent
   },
-  {
-    path: 'nfts/collections',
-    component: CollectionsComponent
-  },
-  {
-    path: 'nfts/activity',
-    component: ActivityComponent
-  }
+  // {
+  //   path: 'nfts/collections',
+  //   component: CollectionsComponent
+  // },
+  // {
+  //   path: 'nfts/activity',
+  //   component: ActivityComponent
+  // }
 ];
 
 @NgModule({
