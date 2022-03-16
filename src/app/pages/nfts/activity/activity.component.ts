@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { ActivityService } from 'src/app/core/service/activity.service';
 import { IActivityTab } from 'src/app/models/activityTab';
 
@@ -9,7 +9,7 @@ import { IActivityTab } from 'src/app/models/activityTab';
   styleUrls: ['./activity.component.css']
 })
 export class ActivityComponent implements OnInit {
-
+  s1!: Subscription;
   activityNfts: any;
 
   totalLength: any;
@@ -18,9 +18,13 @@ export class ActivityComponent implements OnInit {
   constructor(private activityService: ActivityService) { }
 
   ngOnInit(): void {
-    this.activityService.getAll()
+    this.s1 = this.activityService.getAll()
       .subscribe(res => {
         this.activityNfts = res;
-      })
+      });
+  }
+
+  ngOnDestroy() {
+    this.s1.unsubscribe();
   }
 }
