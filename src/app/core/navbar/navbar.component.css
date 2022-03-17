@@ -28,6 +28,7 @@ a{
 .dropdown-item{
   color: var(--pancake-main-light);
   height:45px;
+  padding-top:10px;
 }
 .dropdown-toggle::after{
   display:none;

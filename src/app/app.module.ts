@@ -31,6 +31,7 @@ import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
 import { PoolsComponent } from './pages/earn/pools/pools.component';
 import { NftsComponent } from './pages/nfts/nfts.component';
 import { NftsModule } from './pages/nfts/nfts.module';
+import { PoolCollapseComponent } from './pages/earn/pools/pool-collapse/pool-collapse.component';
 
 
 
@@ -58,7 +59,8 @@ import { NftsModule } from './pages/nfts/nfts.module';
     UsedByMillionsComponent,
     FarmsCollapseComponent,
     EarnTabComponent,
-    PoolsComponent
+    PoolsComponent,
+    PoolCollapseComponent
   ],
   imports: [
     BrowserModule,
