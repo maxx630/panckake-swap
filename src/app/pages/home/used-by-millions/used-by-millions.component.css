@@ -24,11 +24,11 @@
 }
 .col h2 {
     font-size: 40px;
-    color: var(--pancake-main-dark); 
+    color: var(--pancake-main-dark);
 }
 .col .h6 {
     color: var(--pancake-main-light);
-} 
+}
 .secondH6 {
     margin-top: -25px;
 }

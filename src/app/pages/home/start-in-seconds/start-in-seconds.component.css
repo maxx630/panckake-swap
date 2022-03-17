@@ -1,42 +1,27 @@
-.container2{
-   height: 52vh;
-    width: 100%;  
-     display: inline-block;
-     position: relative;
-     flex-direction: column;
-    align-items: center;
-     z-index: 1;
-     background: linear-gradient(rgb(118, 69, 217) 0%, rgba(81, 33, 177, 0.925) 100%);
-}
-.contenuti{
-    text-align: center;
-     margin-top: 30px;
-     font-size: 20px;
-     color: rgb(255, 255, 255);
-     font-size: 16px;
-     font-weight: 600;
-     line-height: 1.5;
+@import '../trade-anything/trade-anything.component.css';
 
- 
-}
-.foto-destra img{
-    margin: -900px;
-    width: auto;
-    animation-name:foto;
-    animation-duration: 23s;
-    animation-iteration-count: infinite;
-    float: left;
-    margin-left:5%;
-    margin-top: 1%;
+.box-sec{
+  background-color:var(--pancake-secondary);
+  height: 500px;
 }
 
-.foto-sinistra img{
-    margin: -600px;
-    width: auto;
-    float: right;
-    margin-right: 100px;
-    margin-top: -19%;
-   
-    overflow: hidden;
+.box-sec2{
+  background-color:var(--pancake-secondary);
 }
 
+.bottom2 h2{
+  color: #fff;
+}
+
+.bottom2 h4{
+ color:#fff;
+}
+
+.btn-empty:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+.father{
+  width:300px;
+}
