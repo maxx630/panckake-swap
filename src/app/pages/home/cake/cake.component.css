@@ -1,31 +1,5 @@
 @import '../trade-anything/trade-anything.component.css';
 
-.box2{
-    float: right;
-    margin-right:27%;
-    margin-top: 17%;
-
-
-}
-.box2 img{
-    margin: -530px 0px -700px;
-    width: auto;
-    margin-right:-300px;
-
-
-
-}
-.box1{
-    padding: 70px;
-    margin: 10%;
-    font-size: 20px;
-    color: rgb(118,69,217);
-    font-weight: 600;
-    line-height: 1.5;
-    text-decoration: justify;
-}
-
-
 .container{
 display: flex;
 justify-content: space-around;
@@ -56,6 +30,4 @@ margin-top: -150px;
     font-weight:bold;
     font-size:24px;
 }
-.nome{
-    margin: -15px;
-}
+
