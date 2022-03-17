@@ -2,6 +2,7 @@
 
 .box-sec{
   background-color:var(--pancake-secondary);
+  height: 500px;
 }
 
 .box-sec2{
@@ -19,4 +20,8 @@
 .btn-empty:hover{
   opacity:1;
   text-decoration:underline;
+}
+
+.father{
+  width:300px;
 }
