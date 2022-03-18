@@ -9,6 +9,11 @@
   background-color:var(--pancake-secondary);
 }
 
+.back{
+  background: url("../../../../assets/images/back.svg") no-repeat center;
+  background-size: cover;
+}
+
 .bottom2 h2{
   color: #fff;
 }
