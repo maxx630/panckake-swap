@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit {
     this.langService.getLangs()
       .subscribe(res => {
         this.langs = res;
-        console.log(this.langs);
       })
   }
 

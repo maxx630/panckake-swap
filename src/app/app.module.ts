@@ -29,7 +29,6 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
 import { FarmsCollapseComponent } from './pages/earn/farms/farms-collapse/farms-collapse.component';
 import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
 import { PoolsComponent } from './pages/earn/pools/pools.component';
-import { NftsComponent } from './pages/nfts/nfts.component';
 import { NftsModule } from './pages/nfts/nfts.module';
 import { PoolCollapseComponent } from './pages/earn/pools/pool-collapse/pool-collapse.component';
 
@@ -68,8 +67,7 @@ import { PoolCollapseComponent } from './pages/earn/pools/pool-collapse/pool-col
     NgbModule,
     HttpClientModule,
     ChartsModule,
-    NgxPaginationModule,
-    NftsModule
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
