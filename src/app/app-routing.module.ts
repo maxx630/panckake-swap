@@ -33,21 +33,9 @@ const routes: Routes = [
     component: SwapComponent
   },
   {
-    path: 'farms',
-    component: EarnTabComponent
-  },
-  {
-    path: 'pools',
-    component: EarnTabComponent
-  },
-  // {
-  //   path: 'nfts/collections',
-  //   component: CollectionsComponent
-  // },
-  // {
-  //   path: 'nfts/activity',
-  //   component: ActivityComponent
-  // }
+    path: 'earn',
+    loadChildren: () => import('../app/pages/earn/earn.module').then(m => m.EarnModule)
+  }
 ];
 
 @NgModule({
