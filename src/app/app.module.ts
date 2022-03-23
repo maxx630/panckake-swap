@@ -24,7 +24,6 @@ import { SwapComponent } from './shared/swap/swap.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
-import { EarnModule } from './pages/earn/earn.module';
 
 
 
