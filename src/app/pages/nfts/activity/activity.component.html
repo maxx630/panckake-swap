@@ -13,7 +13,84 @@
 </div>
 <div class="container-fluid my-5">
     <div class="container tabCont">
-        <table class="table table-borderless">
+        <div class="row">
+            <div class="col col-1">
+                <h5 class="h6 small">FILTER BY</h5>
+                <div class="row">
+                    <div class="col">
+                        <div ngbDropdown class="d-inline-block">
+                            <h6 class="btn regularText" id="dropdownForm1" ngbDropdownToggle>Collections</h6>
+                            <div ngbDropdownMenu aria-labelledby="dropdownForm1 myCont">
+                                <div class="row rowUp my-3">
+                                    <input type="text" placeholder="Search..">
+                                </div>
+                                <div class="row rowDown">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="h6 small">Name</h5>
+                                        </div>
+                                        <div class="col colDescription">
+                                            <h5 class="h6 small">Filter</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container my-3" role="group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="kittens" class="h6 small pagCont">Kittens</label>
+                                        </div>
+                                        <div class="col colDescription">
+                                            <div class="check {{checkedClassK}}" (click)="filterByK('Kittens Meow Meow')" >
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="pancake" class="h6 small pagCont">Pancake Squad</label>
+                                        </div>
+                                        <div class="col colDescription">
+                                            <div class="check {{checkedClassP}}" (click)="filterByP('Pancake Squad')">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="pancake" class="h6 small pagCont">Gamester Apes</label>
+                                        </div>
+                                        <div class="col colDescription">
+                                            <div class="check {{checkedClassG}}" (click)="filterByG('Gamester Apes')">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="pancake" class="h6 small pagCont">ShitPunks</label>
+                                        </div>
+                                        <div class="col colDescription">
+                                            <div class="check {{checkedClassS}}" (click)="filterByS('ShitPunks')">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="h6" (click)="filter('Listed')">Listed</h6>
+                <h6 class="h6" (click)="filter('Delisted')">Delisted</h6>
+                <h6 class="h6" (click)="filter('Modified')">Modified</h6>
+                <h6 class="h6" (click)="filter('Sold')">Sold</h6>
+            </div>
+            <div class="col col-2">
+                <a role="button" class="btn btn-empty" id="border" (click)="clearFilter()">Clear</a>
+                <a class="btn btn-full-small a-padding" (click)="reloadCurrentPage()">Refresh</a>
+            </div>
+        </div>
+        <table class="table table-borderless my-5">
             <thead>
                 <tr>
                     <th scope="col">
@@ -37,7 +114,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="myRow" *ngFor="let i of activityNfts | 
+                <tr class="myRow" *ngFor="let i of filterEvent | 
                 paginate: { 
                     itemsPerPage: 8,
                     currentPage: page, 
@@ -61,14 +138,14 @@
                         </div>
                     </td>
                     <td>
-                        <h6 class="h6">
+                        <h6 class="h6 myH6 eventSection" [classList]="i.event == 'Sold' ? 'soldText' : 'regularText'">
                             {{i.event}}
                         </h6>
                     </td>
                     <td>
                         <div class="col descriptionCol mx-2">
                             <div class="col">
-                                <h6 class="h6 diffCol">
+                                <h6 class="h6 diffCol my-3">
                                     {{i.cryptoPrice}}
                                 </h6>
                             </div>
@@ -80,17 +157,17 @@
                         </div>
                     </td>
                     <td>
-                        <h6 class="h6 diffCol">
+                        <h6 class="h6 diffCol myH6">
                             {{i.user}}
                         </h6>
                     </td>
                     <td class="text-center">
-                        <h6 class="h6 diffCol">
+                        <h6 class="h6 diffCol myH6">
                             -
                         </h6>
                     </td>
                     <td class="text-center">
-                        <h6 class="h6 diffCol">
+                        <h6 class="h6 diffCol myH6">
                             {{i.date | date: 'dd/MM/yyyy'}}
                         </h6>
                     </td>
