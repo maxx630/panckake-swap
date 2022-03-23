@@ -22,7 +22,7 @@
                             <h6 class="btn regularText" id="dropdownForm1" ngbDropdownToggle>Collections</h6>
                             <div ngbDropdownMenu aria-labelledby="dropdownForm1 myCont">
                                 <div class="row rowUp my-3">
-                                    <input type="text" placeholder="Search..">
+                                    <input [(ngModel)]="searchTerm" (keyup)="search($event)" type="text" placeholder="Search..">
                                 </div>
                                 <div class="row rowDown">
                                     <div class="row">
@@ -114,7 +114,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="myRow" *ngFor="let i of filterEvent | 
+                <tr class="myRow" *ngFor="let i of filterEvent | filter:searchKey:'title' | 
                 paginate: { 
                     itemsPerPage: 8,
                     currentPage: page, 

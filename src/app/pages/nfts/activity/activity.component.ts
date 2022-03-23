@@ -21,6 +21,9 @@ export class ActivityComponent implements OnInit {
   totalLength: any;
   page: number = 1;
 
+  searchKey: string = '';
+  searchTerm: string = '';
+
   constructor(private activityService: ActivityService) { }
 
   ngOnInit(): void {
@@ -29,6 +32,9 @@ export class ActivityComponent implements OnInit {
         this.activityNfts = res;
         this.filterEvent = res;
       });
+    this.activityService.search.subscribe((value: any) => {
+      this.searchKey = value;
+    })
   }
 
   // COLLECTION FILTERS 
@@ -90,7 +96,6 @@ export class ActivityComponent implements OnInit {
       this.checkedClassK = '';
     }
   }
-
   filterByP(description: any) {
     console.log('sono stato cliccato')
     this.filterEvent = this.activityNfts
@@ -133,4 +138,11 @@ export class ActivityComponent implements OnInit {
   clearFilter() {
     this.filterEvent = this.activityNfts;
   }
+
+  search(event: any) {
+    this.searchTerm = (event.target as HTMLInputElement).value;
+    console.log(this.searchTerm);
+    this.activityService.search.next(this.searchTerm);
+  }
+
 }
