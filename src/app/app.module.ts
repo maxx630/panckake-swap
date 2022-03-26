@@ -21,16 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { LineChartComponent } from './shared/chart/line-chart/line-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { SwapComponent } from './shared/swap/swap.component';
-import { EarnComponent } from './pages/earn/earn.component';
-import { FarmsComponent } from './pages/earn/farms/farms.component';
 
 import {NgxPaginationModule} from 'ngx-pagination';
 import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
-import { FarmsCollapseComponent } from './pages/earn/farms/farms-collapse/farms-collapse.component';
-import { EarnTabComponent } from './shared/earn-tab/earn-tab.component';
-import { PoolsComponent } from './pages/earn/pools/pools.component';
-import { NftsComponent } from './pages/nfts/nfts.component';
-import { NftsModule } from './pages/nfts/nfts.module';
 
 
 
@@ -53,12 +46,7 @@ import { NftsModule } from './pages/nfts/nfts.module';
     StartInSecondsComponent,
     LineChartComponent,
     SwapComponent,
-    EarnComponent,
-    FarmsComponent,
-    UsedByMillionsComponent,
-    FarmsCollapseComponent,
-    EarnTabComponent,
-    PoolsComponent
+    UsedByMillionsComponent
   ],
   imports: [
     BrowserModule,
@@ -66,8 +54,7 @@ import { NftsModule } from './pages/nfts/nfts.module';
     NgbModule,
     HttpClientModule,
     ChartsModule,
-    NgxPaginationModule,
-    NftsModule
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

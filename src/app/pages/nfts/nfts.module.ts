@@ -12,6 +12,8 @@ import { NftsRoutingModule } from './nfts-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FilterPipe } from 'src/app/shared/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,14 +26,17 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FaqsComponent,
     HotCollectionsComponent,
     NewestArrivalsComponent,
-    NewestCollectionsComponent
+    NewestCollectionsComponent,
+    FilterPipe
   ],
   imports: [
     CommonModule,
     NftsRoutingModule,
     NgbModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class NftsModule { }

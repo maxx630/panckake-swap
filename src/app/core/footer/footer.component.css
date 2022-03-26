@@ -1,65 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 .container3 {
-    background-color: #333;
+    background-color: rgb(39, 38, 44);
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
 }
 
-.row {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin: auto;
-    padding: auto;
-    width: 83%;
-    margin-top: 30px;
-}
-
-.row a {
+.ul li a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 900;
     color: white;
 }
 
-.row h2 {
-    color: hsl(259, 66%, 56%);
-    font-size: 25px;
-    margin-left: -10px;
+.box-b-b{
+  padding:40px;
 }
 
-.logo {
-    margin-top: 50px;
-    display: flex;
-    margin-left: -15px;
+.linea1 ul li h2{
+  color:rgb(154, 106, 255);
+  font-size:16px;
+  font-weight:bold;
 }
 
-.logo .sc-bdnxRM {
-    margin: 10px;
-}
-
-.row2 {
-    background-color: #333;
-   margin-left:10%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-
-}
-
-.linea2 {
-    margin-left: -180px;
-}
-
-.linea3 {
-    margin-left: 100px;
-}
-
-.linea4 {
-    margin-left: 100px;
-}
-
+<<<<<<< HEAD
 #toggle-btn {
     display: inline-block;
     width: 40px;
@@ -76,93 +40,76 @@
     margin-left: -30px;
     margin-top: 21px;
 
+=======
+.linea1 ul li a {
+  color: rgb(244, 238, 255);
+  line-height:2.3em;
+  font-size:16px;
+  text-decoration: none;
+>>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 }
 
-#toggle-btn::before {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(64, 41, 192);
-    border-radius: 50%;
-    left: 6px;
-    top: 2px;
-    content: '';
-    transition: all ease-in-out .4s;
-    z-index: 10;
+.linea1 ul li a:hover{
+  text-decoration: underline;
 }
 
-#toggle-btn.toggle-btn--dark {
-    background-color: #000000;
+#orang{
+  color:var(--pancake-tertiary);
 }
 
-#toggle-btn.toggle-btn--dark::before {
-    left:10px;
+.box-brand div{
+  margin: 0 15px;
+  fill:rgb(184, 173, 210);
 }
 
-.lettera {
-    font-size: 23px;
-    color: #9a9e8a;
-    margin-top: 17px;
-    margin-left: -10px;
-  
+.sw-ch{
+  margin-left:40px;
 }
 
-
-#icone {
-    float: right;
-    display: inline-flex;
+hr {
+    border-bottom: 3px solid rgb(56, 50, 65);
+    width: 80%;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
 }
 
+<<<<<<< HEAD
 #icone>.btn {
 margin-left: 60px;
 
+=======
+.form-check {
+  width: 80px;
+>>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 }
 
-
-#icone>.sc-gsDKAQ {
-    margin-top: 18px;
+.ico-col{
+  fill: rgb(184, 173, 210);
 }
+<<<<<<< HEAD
   
 .sc-gsDKAQ{
     margin-left: 20px;
 }
 
+=======
+>>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 
-.btn {
-    width: 150px;
-    height: 50px;
-    background-color: #1fc6d3;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: rgb(255, 255, 255);
-    overflow: hidden;
+.ico-col span{
+  color: rgb(184, 173, 210);
 }
 
-.link4 {
-
-    display: flex;
-    flex-direction: row-reverse;
+.money{
+  color: rgb(184, 173, 210);
 }
 
-.link4 svg {
-    color: #9a9e8a;
-    margin: 15px;
+.a-padding svg{
+  fill:#fff;
 }
 
-hr {
-    border: 2px solid rgb(8, 8, 8);
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.2;
-}
-
-.sc-bdvvt {
-  margin-left: 700px;
-  
+.space-b-div ul li a{
+  margin: 0 15px;
 }
