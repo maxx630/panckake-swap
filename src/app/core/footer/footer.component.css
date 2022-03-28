@@ -23,7 +23,6 @@
   font-weight:bold;
 }
 
-<<<<<<< HEAD
 #toggle-btn {
     display: inline-block;
     width: 40px;
@@ -40,13 +39,6 @@
     margin-left: -30px;
     margin-top: 21px;
 
-=======
-.linea1 ul li a {
-  color: rgb(244, 238, 255);
-  line-height:2.3em;
-  font-size:16px;
-  text-decoration: none;
->>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 }
 
 .linea1 ul li a:hover{
@@ -76,27 +68,19 @@ hr {
     display:block;
 }
 
-<<<<<<< HEAD
 #icone>.btn {
 margin-left: 60px;
 
-=======
-.form-check {
-  width: 80px;
->>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 }
 
 .ico-col{
   fill: rgb(184, 173, 210);
 }
-<<<<<<< HEAD
   
 .sc-gsDKAQ{
     margin-left: 20px;
 }
 
-=======
->>>>>>> 1ec32c0ebeb53550491274aa23734d12b30edc5c
 
 .ico-col span{
   color: rgb(184, 173, 210);
