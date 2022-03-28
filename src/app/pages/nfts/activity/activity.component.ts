@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ActivityService } from 'src/app/core/service/activity.service';
+import { IActivityTab } from 'src/app/models/activityTab';
 
 @Component({
   selector: 'psclone-activity',
@@ -15,7 +16,7 @@ export class ActivityComponent implements OnInit {
   checkedClassS = '';
   checkedClassG = '';
 
-  activityNfts: any;
+  activityNfts: IActivityTab[] = [];
   filterEvent: any;
 
   totalLength: any;
@@ -36,17 +37,20 @@ export class ActivityComponent implements OnInit {
       this.searchKey = value;
     })
   }
-
-  // COLLECTION FILTERS 
-
-  filterByS(description: any) {
-    console.log('sono stato cliccato')
+  
+  getFilterEvent(description: any) {
     this.filterEvent = this.activityNfts
       .filter((a: any) => {
         if (a.description == description || description == '') {
           return a;
         }
       })
+  }
+
+  // COLLECTION FILTERS 
+
+  filterByS(description: any) {
+    this.getFilterEvent(description);
     if (this.checkedClassS === '') {
       this.checkedClassS = "checkedFilter";
       this.checkedClassK = '';
@@ -59,13 +63,7 @@ export class ActivityComponent implements OnInit {
     }
   }
   filterByG(description: any) {
-    console.log('sono stato cliccato')
-    this.filterEvent = this.activityNfts
-      .filter((a: any) => {
-        if (a.description == description || description == '') {
-          return a;
-        }
-      })
+    this.getFilterEvent(description);
     if (this.checkedClassG === '') {
       this.checkedClassS = '';
       this.checkedClassK = '';
@@ -78,13 +76,7 @@ export class ActivityComponent implements OnInit {
     }
   }
   filterByK(description: any) {
-    console.log('sono stato cliccato')
-    this.filterEvent = this.activityNfts
-      .filter((a: any) => {
-        if (a.description == description || description == '') {
-          return a;
-        }
-      })
+    this.getFilterEvent(description);
     if (this.checkedClassK === '') {
       this.checkedClassS = '';
       this.checkedClassK = "checkedFilter";
@@ -97,13 +89,7 @@ export class ActivityComponent implements OnInit {
     }
   }
   filterByP(description: any) {
-    console.log('sono stato cliccato')
-    this.filterEvent = this.activityNfts
-      .filter((a: any) => {
-        if (a.description == description || description == '') {
-          return a;
-        }
-      })
+    this.getFilterEvent(description);
     if (this.checkedClassP === '') {
       this.checkedClassS = '';
       this.checkedClassK = '';
