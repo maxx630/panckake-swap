@@ -1,25 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './core/navbar/navbar.component';
-import { FooterComponent } from './core/footer/footer.component';
-import { ConnectWalletComponent } from './core/connect-wallet/connect-wallet.component';
-import { HeroComponent } from './pages/home/hero/hero.component';
-import { EarnPassiveIncomeComponent } from './pages/home/earn-passive-income/earn-passive-income.component';
-import { TradeAnythingComponent } from './pages/home/trade-anything/trade-anything.component';
-import { WinMillionsComponent } from './pages/home/win-millions/win-millions.component';
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './pages/home/home/home.component';
-import { CakeComponent } from './pages/home/cake/cake.component';
-import { StartInSecondsComponent } from './pages/home/start-in-seconds/start-in-seconds.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ChartsModule } from 'ng2-charts';
-
-import {NgxPaginationModule} from 'ngx-pagination';
-import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-millions.component';
-
-
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ConnectWalletComponent } from './shared/connect-wallet/connect-wallet.component';
+import { HeroComponent } from './features/home/hero/hero.component';
+import { EarnPassiveIncomeComponent } from './features/home/earn-passive-income/earn-passive-income.component';
 
 @NgModule({
   declarations: [
@@ -28,20 +15,10 @@ import { UsedByMillionsComponent } from './pages/home/used-by-millions/used-by-m
     FooterComponent,
     ConnectWalletComponent,
     HeroComponent,
-    EarnPassiveIncomeComponent,
-    TradeAnythingComponent,
-    WinMillionsComponent,
-    HomeComponent,
-    CakeComponent,
-    StartInSecondsComponent,
-    UsedByMillionsComponent
+    EarnPassiveIncomeComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    HttpClientModule,
-    NgxPaginationModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
