@@ -82,8 +82,9 @@ margin-left: 60px;
 }
 
 
-.ico-col span{
+.ico-col {
   color: rgb(184, 173, 210);
+  margin-left: -200px;
 }
 
 .money{
@@ -95,5 +96,12 @@ margin-left: 60px;
 }
 
 .space-b-div ul li a{
-  margin: 0 15px;
+  margin: 0 20px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.nav-item{
+  margin-bottom: 30px;
 }
